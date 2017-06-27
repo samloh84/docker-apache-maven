@@ -31,8 +31,8 @@ echo "${MAVEN_INSTALL_TAR_GZ_MD5SUM}  ${MAVEN_INSTALL_TAR_GZ}" | md5sum -c - && 
 tar -xzf ${TEMP_DIR}/${MAVEN_INSTALL_TAR_GZ} --strip-components=1 -C ${INSTALL_DIR} && \
 fix-ownership ${INSTALL_DIR} && \
 fix-permissions ${INSTALL_DIR} && \
-rm -rf ${TEMP_DIR_ROOT} && \
-popd
+popd && \
+rm -rf ${TEMP_DIR_ROOT}
 
 ENV M2_HOME ${INSTALL_DIR}
 ENV PATH ${PATH}:${M2_HOME}/bin
