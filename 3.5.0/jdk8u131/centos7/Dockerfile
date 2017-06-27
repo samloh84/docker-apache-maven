@@ -29,6 +29,7 @@ gpg --import ./KEYS && \
 gpg --verify ${MAVEN_INSTALL_TAR_GZ_ASC} ${MAVEN_INSTALL_TAR_GZ} && \
 echo "${MAVEN_INSTALL_TAR_GZ_MD5SUM}  ${MAVEN_INSTALL_TAR_GZ}" | md5sum -c - && \
 tar -xzf ${TEMP_DIR}/${MAVEN_INSTALL_TAR_GZ} --strip-components=1 -C ${INSTALL_DIR} && \
+fix-ownership ${INSTALL_DIR} && \
 fix-permissions ${INSTALL_DIR} && \
 rm -rf ${TEMP_DIR_ROOT} && \
 popd
