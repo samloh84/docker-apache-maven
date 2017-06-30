@@ -35,6 +35,6 @@ popd && \
 rm -rf ${TEMP_DIR_ROOT}
 
 ENV M2_HOME ${INSTALL_DIR}
-ENV PATH ${PATH}:${M2_HOME}/bin
+ENV PATH ${M2_HOME}/bin:${PATH}
 
 USER ${APP_UID}
