@@ -1,0 +1,29 @@
+repository_name: samloh84/apache-maven
+base_repositories:
+  - samloh84/oracle-java-jdk
+
+templates:
+  - Dockerfile
+  - Makefile
+
+starting_url: http://www-eu.apache.org/dist/maven/
+scraper_url_patterns:
+  - http://www-eu.apache.org/dist/maven/maven-\d+/$
+  - http://www-eu.apache.org/dist/maven/maven-\d+/(\d+\.\d+\.\d+)/$
+version_url_patterns:
+  - http://www-eu.apache.org/dist/maven/maven-\d+/(\d+\.\d+\.\d+)/$
+file_patterns:
+  gpg_keys: /(KEYS)$
+  binaries:
+      .tar.gz:
+          pattern: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.tar\.gz))$
+          checksums:
+              md5: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.tar\.gz\.md5))$
+              sha1: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.tar\.gz\.sha1))$
+          signature: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.tar\.gz\.asc))$
+      .zip:
+          pattern: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.zip))$
+          checksums:
+              md5: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.zip\.md5))$
+              sha1: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.zip\.sha1))$
+          signature: (\d+\.\d+\.\d+)/binaries/(apache-maven-(\d+\.\d+\.\d+)-bin(\.zip\.asc))$

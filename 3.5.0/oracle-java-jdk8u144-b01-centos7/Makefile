@@ -1,5 +1,5 @@
 REPOSITORY_NAME := samloh84/apache-maven
-TAGS := 3.5.0 3.5.0-jdk8u131 3.5.0-jdk8u131-centos7 latest
+TAGS := 3.5.0 3.5.0-oracle-java-jdk8u144-b01-centos7 3.5.0-oracle-java-jdk8u144-b01
 CONTAINER_NAME := $(shell echo $(REPOSITORY_NAME) | sed -e 's/[^a-zA-Z0-9_.-]/-/g')
 
 .PHONY: all clean build push bash sudo run exec rm rmi

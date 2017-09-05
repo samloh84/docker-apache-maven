@@ -1,0 +1,142 @@
+last_updated: 1504604894
+versions:
+  3.0.5:
+    binaries:
+      .tar.gz:
+        checksums:
+          md5:
+            filename: apache-maven-3.0.5-bin.tar.gz.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.tar.gz.md5
+          sha1:
+            filename: apache-maven-3.0.5-bin.tar.gz.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.tar.gz.sha1
+        filename: apache-maven-3.0.5-bin.tar.gz
+        signature:
+          filename: apache-maven-3.0.5-bin.tar.gz.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.tar.gz.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.tar.gz
+      .zip:
+        checksums:
+          md5:
+            filename: apache-maven-3.0.5-bin.zip.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.zip.md5
+          sha1:
+            filename: apache-maven-3.0.5-bin.zip.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.zip.sha1
+        filename: apache-maven-3.0.5-bin.zip
+        signature:
+          filename: apache-maven-3.0.5-bin.zip.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.zip.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.zip
+  3.1.1:
+    binaries:
+      .tar.gz:
+        checksums:
+          md5:
+            filename: apache-maven-3.1.1-bin.tar.gz.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz.md5
+          sha1:
+            filename: apache-maven-3.1.1-bin.tar.gz.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz.sha1
+        filename: apache-maven-3.1.1-bin.tar.gz
+        signature:
+          filename: apache-maven-3.1.1-bin.tar.gz.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
+      .zip:
+        checksums:
+          md5:
+            filename: apache-maven-3.1.1-bin.zip.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.zip.md5
+          sha1:
+            filename: apache-maven-3.1.1-bin.zip.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.zip.sha1
+        filename: apache-maven-3.1.1-bin.zip
+        signature:
+          filename: apache-maven-3.1.1-bin.zip.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.zip.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.zip
+  3.2.5:
+    binaries:
+      .tar.gz:
+        checksums:
+          md5:
+            filename: apache-maven-3.2.5-bin.tar.gz.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz.md5
+          sha1:
+            filename: apache-maven-3.2.5-bin.tar.gz.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz.sha1
+        filename: apache-maven-3.2.5-bin.tar.gz
+        signature:
+          filename: apache-maven-3.2.5-bin.tar.gz.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz
+      .zip:
+        checksums:
+          md5:
+            filename: apache-maven-3.2.5-bin.zip.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.zip.md5
+          sha1:
+            filename: apache-maven-3.2.5-bin.zip.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.zip.sha1
+        filename: apache-maven-3.2.5-bin.zip
+        signature:
+          filename: apache-maven-3.2.5-bin.zip.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.zip.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.zip
+  3.3.9:
+    binaries:
+      .tar.gz:
+        checksums:
+          md5:
+            filename: apache-maven-3.3.9-bin.tar.gz.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz.md5
+          sha1:
+            filename: apache-maven-3.3.9-bin.tar.gz.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz.sha1
+        filename: apache-maven-3.3.9-bin.tar.gz
+        signature:
+          filename: apache-maven-3.3.9-bin.tar.gz.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+      .zip:
+        checksums:
+          md5:
+            filename: apache-maven-3.3.9-bin.zip.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip.md5
+          sha1:
+            filename: apache-maven-3.3.9-bin.zip.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip.sha1
+        filename: apache-maven-3.3.9-bin.zip
+        signature:
+          filename: apache-maven-3.3.9-bin.zip.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip
+  3.5.0:
+    binaries:
+      .tar.gz:
+        checksums:
+          md5:
+            filename: apache-maven-3.5.0-bin.tar.gz.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz.md5
+          sha1:
+            filename: apache-maven-3.5.0-bin.tar.gz.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz.sha1
+        filename: apache-maven-3.5.0-bin.tar.gz
+        signature:
+          filename: apache-maven-3.5.0-bin.tar.gz.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
+      .zip:
+        checksums:
+          md5:
+            filename: apache-maven-3.5.0-bin.zip.md5
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip.md5
+          sha1:
+            filename: apache-maven-3.5.0-bin.zip.sha1
+            url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip.sha1
+        filename: apache-maven-3.5.0-bin.zip
+        signature:
+          filename: apache-maven-3.5.0-bin.zip.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip
