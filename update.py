@@ -60,7 +60,8 @@ def render_apache_maven_dockerfiles(data, config, update_all_versions=False, for
                     tags.append(version + '-' + base_repository_name + tag)
                 version_info = semver.parse_version_info(normalize_version_to_semver(version))
 
-                base_os = re.compile('centos|alpine|ubuntu|debian|fedora|rhel').search(base_repository_tag).group(0)
+                base_os = re.compile('centos|alpine|ubuntu|debian|fedora|rhel').search(
+                    base_repository_name + base_repository_tag).group(0)
 
                 render_data = {
                     'version': version,
@@ -69,6 +70,7 @@ def render_apache_maven_dockerfiles(data, config, update_all_versions=False, for
                     'base_repository_name': base_repository_name,
                     'base_image_name': base_image_name,
                     'config': config,
+                    'base_os': base_os,
                     'repository_name': repository_name,
                     'tags': tags
                 }
