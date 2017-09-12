@@ -1,7 +1,7 @@
 REPOSITORY_NAME := {{ repository_name }}
 {% if registries -%}
 REGISTRIES := {{ registries | join(' ') }}
-{% endif -%}
+{%- endif -%}
 TAGS := {{ tags | join(' ') }}
 CONTAINER_NAME := $(shell echo $(REPOSITORY_NAME) | sed -e 's/[^a-zA-Z0-9_.-]/-/g')
 
@@ -18,7 +18,7 @@ build:
 	DOCKER_BUILD_ARGS+="-t $${REGISTRY}/$(REPOSITORY_NAME):$${TAG} "; \
 	done; \
 	done; \
-	{% endif -%}
+	{%- endif -%}
 	sudo docker build $${DOCKER_BUILD_ARGS} .
 
 push:
@@ -31,7 +31,7 @@ push:
 	done; \
 	{%- else -%}
 	for TAG in $(TAGS); do sudo docker push $(REPOSITORY_NAME):$${TAG}; done; \
-	{% endif -%}
+	{%- endif %}
 
 run:
 	set -x; \
@@ -43,7 +43,7 @@ run:
 	for TAG in $(TAGS); do IMAGE_NAME="$(REPOSITORY_NAME):$${TAG} "; break; done; \
 	sudo docker run $${DOCKER_RUN_ARGS} $${IMAGE_NAME}
 
-{% set container_shell = 'ash' if base_os == 'alpine' else 'bash' %}
+{% set container_shell = 'ash' if base_os == 'alpine' else 'bash' -%}
 {{ container_shell }}:
 	set -x; \
 	DOCKER_RUN_ARGS=""; \

@@ -14,7 +14,8 @@ build:
 push:
 	set -x; \
 	for TAG in $(TAGS); do sudo docker push $(REPOSITORY_NAME):$${TAG}; done; \
-	run:
+
+run:
 	set -x; \
 	DOCKER_RUN_ARGS=""; \
 	DOCKER_RUN_ARGS+="--tty "; \
@@ -23,7 +24,6 @@ push:
 	DOCKER_RUN_ARGS+="--name $(CONTAINER_NAME) "; \
 	for TAG in $(TAGS); do IMAGE_NAME="$(REPOSITORY_NAME):$${TAG} "; break; done; \
 	sudo docker run $${DOCKER_RUN_ARGS} $${IMAGE_NAME}
-
 
 bash:
 	set -x; \

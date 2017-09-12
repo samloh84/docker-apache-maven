@@ -20,8 +20,8 @@ def update_apache_maven_data(data, config, update_all_versions=False):
     if update_all_versions or version_constraints is None:
         versions_to_update = versions
     else:
-        versions_to_update = filter_versions(versions, version_constraints,
-                                             normalize_version=normalize_version_to_semver)
+        versions_to_update = filter_latest_versions(versions, version_constraints,
+                                                    normalize_version=normalize_version_to_semver)
 
     pydash.objects.merge(data, {'versions': scraper.list_version_files(versions)},
                          {'last_updated': datetime_to_timestamp()})
@@ -82,15 +82,16 @@ def render_apache_maven_dockerfiles(data, config, update_all_versions=False, for
     if update_all_versions:
         versions_to_update = versions
     else:
-        versions_to_update = filter_latest_versions(versions, config.get('version_constraints'),
+        versions_to_update = filter_latest_versions(versions,
+                                                    version_constraints=config.get('version_constraints'),
                                                     normalize_version=normalize_version_to_semver)
 
-    base_repository_info = get_base_repository_info(config)
+    base_repository_info_list = get_base_repository_info(config)
 
     for version in versions_to_update:
         version_files = data['versions'][version]
 
-        for base_repository_info in base_repository_info:
+        for base_repository_info in base_repository_info_list:
 
             base_repository = base_repository_info['base_repository']
             tag_groups = base_repository_info['tag_groups']
