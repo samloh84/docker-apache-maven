@@ -30,7 +30,7 @@ push:
 	done; \
 	done; \
 	{%- else -%}
-	for TAG in $(TAGS); do sudo docker push $(REPOSITORY_NAME):$${TAG}; done; \
+	for TAG in $(TAGS); do sudo docker push $(REPOSITORY_NAME):$${TAG}; done;
 	{%- endif %}
 
 run:
