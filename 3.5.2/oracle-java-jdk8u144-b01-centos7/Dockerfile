@@ -1,18 +1,18 @@
-FROM samloh84/oracle-java-jdk:7u80-b15-centos7
+FROM samloh84/oracle-java-jdk:8u144-b01-centos7
 ARG VENDOR=apache
 ARG PRODUCT=maven
-ARG PRODUCT_VERSION=3.5.0
+ARG PRODUCT_VERSION=3.5.2
 ARG TEMP_DIR_ROOT=/tmp/${VENDOR}-${PRODUCT}
 ARG TEMP_DIR=/${TEMP_DIR_ROOT}/${PRODUCT_VERSION}
 ARG INSTALL_DIR_ROOT=/opt/${VENDOR}-${PRODUCT}
 ARG INSTALL_DIR=${INSTALL_DIR_ROOT}/${PRODUCT_VERSION}
 
-ARG APACHE_MAVEN_BINARIES_URL="http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz"
-ARG APACHE_MAVEN_BINARIES="apache-maven-3.5.0-bin.tar.gz"
+ARG APACHE_MAVEN_BINARIES_URL="http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz"
+ARG APACHE_MAVEN_BINARIES="apache-maven-3.5.2-bin.tar.gz"
 ARG APACHE_MAVEN_GPG_KEYS_URL=http://www-eu.apache.org/dist/maven/KEYS
 ARG APACHE_MAVEN_GPG_KEYS=KEYS
-ARG APACHE_MAVEN_SIGNATURE_URL="http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz.asc"
-ARG APACHE_MAVEN_SIGNATURE="apache-maven-3.5.0-bin.tar.gz.asc"
+ARG APACHE_MAVEN_SIGNATURE_URL="http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz.asc"
+ARG APACHE_MAVEN_SIGNATURE="apache-maven-3.5.2-bin.tar.gz.asc"
 
 USER ${ROOT_UID}
 

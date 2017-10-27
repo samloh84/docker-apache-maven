@@ -1,4 +1,4 @@
-last_updated: 1507541971
+last_updated: 1509087176
 versions:
   3.0.5:
     binaries:
@@ -140,3 +140,17 @@ versions:
           filename: apache-maven-3.5.0-bin.zip.asc
           url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip.asc
         url: http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip
+  3.5.2:
+    binaries:
+      .tar.gz:
+        filename: apache-maven-3.5.2-bin.tar.gz
+        signature:
+          filename: apache-maven-3.5.2-bin.tar.gz.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
+      .zip:
+        filename: apache-maven-3.5.2-bin.zip
+        signature:
+          filename: apache-maven-3.5.2-bin.zip.asc
+          url: http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.zip.asc
+        url: http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.zip
